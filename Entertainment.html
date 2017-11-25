@@ -5,9 +5,8 @@
 <style>
 body {
 	color: black;
-	background-image: url("stars.gif");
+	background-image:url("stars.gif");
 }
-
 header {
 	font-size:250%;
 	text-align: center;
@@ -15,13 +14,52 @@ header {
 h1 {
     text-align: center;
 }
+
+h2 {
+    text-align: center;
+}
 body {
 	text-align: center;
 	font-size:150%;
-
 }
-h2 {
-    text-align: center;
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
 </style>
 </head>
@@ -31,27 +69,35 @@ h2 {
 <a href="Entertainment.html">Entertainment</a> <a href="Contact Us.html">Contact Us</a>
 <a href="Mission Statement.html">Mission Statement</a></b></nav>
 <main>
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#game">Game</a>
+    <a href="#">Viewings</a>
+    <a href="#">Table Top</a>
+  </div>
+</div>
 <h1>The Battle Begins!!</h1>
 <p><b>Our collection is lit! Check it out</b>
 <dl style="list-style-type:disc">
-	<dt><u><b>Wii U/Wii</b></u></dt>
+	<dt><strong><u><b>Wii U/Wii</b></u></strong></dt>
 		<dd> Breath of wild</dd>
 		<dd> Super Mario 3D World</dd>
 		<dd> Just Dance</dd>
 		<dd> Super Monkey Ball</dd>
-	<dt><u><b>Xbox 1/Xbox 360</b></u></dt>
+	<dt><strong><u><b>Xbox 1/Xbox 360</b></u></strong></dt>
 		<dd> Cuphead</dd>
 		<dd> Injustice</dd>
 		<dd> Call of Duty</dd>
 		<dd> Portal</dd>
 		<dd> Mortal Kombat X</dd>
-	<dt><u><b>PS4</b></u></dt>
+	<dt><strong><u><b>PS4</b></u></strong></dt>
 		<dd> Rocket League</dd>
 		<dd> Dead or Alive</dd>
 		<dd> Overwatch</dd>
 		<dd> Tekken</dd>
 		<dd> Naruto</dd>
-	<dt><u><b>Game Cube/N64</b></u></dt>
+	<dt><strong><u><b>Game Cube/N64</b></u></strong></dt>
 		<dd> Mario Kart</dd>
 		<dd> Banjo & Kazooie</dd>
 	</dl>
